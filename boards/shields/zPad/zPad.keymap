@@ -1,0 +1,23 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    // Define a default keymap here.
+    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp KP_NUMLOCK  &kp KP_SLASH    &kp KP_ASTERISK &kp KP_MINUS
+                &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &none
+                &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &none
+                &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_PLUS
+                &kp KP_NUMBER_0 &none           &kp KP_DOT      &kp KP_ENTER
+            >;
+        };
+    };
+};
